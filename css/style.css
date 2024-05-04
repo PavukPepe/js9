@@ -1,0 +1,126 @@
+:root {
+	--aboba-color: #ffffff;.
+	--animation: ;
+}
+
+.card-body {
+	height: 360px;
+	width: 745px;
+	max-height: 360px;
+	max-width: 745px;
+
+	background-color: white;
+	border-radius: 15px;
+	.card {
+		padding: 30px;
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		.card-info {
+			font-family: 'Rubik';
+			font-size: 20px;
+			display: grid;
+			gap: 10px;
+			.card-contacts {
+				display: grid;
+				gap: 5px;
+				font-size: 20px;
+				font-weight: 400;
+			}
+
+			.card-address {
+				display: grid;
+				gap: 5px;
+				font-size: 20px;
+				font-weight: 400;
+			}
+		}
+	}
+}
+
+body {
+	background: #e8ebf4;
+}
+
+.small-text-box {
+	display: flex;
+	height: 30px;
+	width: 300px;
+	font-size: 20px;
+	font-weight: 400;
+	font-family: 'Rubik';
+	border-radius: 5px;
+	align-items: center;
+}
+
+.big-text-box {
+	display: flex;
+	height: 66px;
+	width: 355px;
+	font-size: 40px;
+	font-weight: 500;
+	font-family: 'Rubik';
+	border-radius: 5px;
+	align-items: center;
+}
+
+.bordered {
+	border-style: solid;
+	border-width: 3px;
+	border-color: #e8ebf4;
+}
+
+.photo {
+	display: flex;
+	justify-content: end;
+}
+
+.plashka {
+	display: flex;
+	img {
+		height: 30px;
+		width: 30px;
+		margin-right: 25px;
+	}
+}
+
+.little-article {
+	font-weight: 500;
+}
+
+.centering {
+	display: flex;
+	align-items: center;
+}
+
+.cards {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 20px;
+}
+
+.photo-img {
+	height: 300px;
+	width: 320px;
+	max-height: 300px;
+	max-width: 320px;
+}
+
+#add-but {
+	font-weight: 500;
+	font-family: 'Rubik';
+	font-size: 18px;
+	background-color: white;
+	height: 30px;
+	width: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 90px;
+}
+
+.adds {
+	display: flex;
+	justify-content: center;
+	margin: 10px;
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>P9_JS</title>
+		<link rel="stylesheet" href="../css/drop-style.css" />
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap"
+			rel="stylesheet"
+		/>
+	</head>
+	<body>
+		<div class="cards" id="keks">
+			<div style="display: none">
+				<div class="card-body" id="test" style="display: ">
+					<div class="card">
+						<div class="card-info">
+							<div>
+								<input
+									placeholder="Название"
+									type="text"
+									class="big-text-box bordered"
+									id="org_name"
+								/>
+							</div>
+							<div class="card-contacts">
+								<div class="plashka centering">
+									<img src="../img/mail.svg" alt="#" />
+									<input
+										type="text"
+										class="small-text-box bordered"
+										placeholder="Почта"
+										id="email"
+									/>
+								</div>
+								<div class="plashka centering">
+									<img src="../img/phone.svg" alt="#" />
+									<input
+										type="tel"
+										class="small-text-box bordered"
+										placeholder="+7(___)___-__-__"
+										id="phone"
+									/>
+								</div>
+							</div>
+							<p class="little-article">Адреса</p>
+							<div class="card-address">
+								<input
+									type="text"
+									class="small-text-box bordered"
+									placeholder="Адрес"
+									id="address"
+								/>
+								<div class="plashka centering">
+									<img src="../img/metro.svg" alt="#" />
+									<input
+										type="text"
+										class="small-text-box bordered"
+										placeholder="Метро"
+										id="metro"
+									/>
+								</div>
+							</div>
+						</div>
+						<div class="photo">
+							<input type="file" style="position: absolute; z-index: 1" />
+							<img
+								src="../img/Rectangle 195.png"
+								alt="#"
+								style="position: relative; z-index: 0"
+								class="photo-img"
+							/>
+						</div>
+					</div>
+					<div id="buttons-crud">
+						<button id="save" onclick="save(this)">Сохранить</button>
+						<button id="alter" onclick="alter(this)">Изменить</button>
+						<button id="del" onclick="del(this)">Удалить</button>
+					</div>
+				</div>
+				<div class="card-body" id="templ">
+					<div class="card">
+						<div class="card-info">
+							<div>
+								<p class="big-text-box" id="org_name">МПТ</p>
+							</div>
+							<div class="card-contacts">
+								<div class="plashka centering">
+									<img src="../img/mail.svg" alt="#" />
+									<p class="small-text-box" id="email">example@gmail.com</p>
+								</div>
+								<div class="plashka centering">
+									<img src="../img/phone.svg" alt="#" />
+									<p class="small-text-box" id="phone">+7(800)555-35-35</p>
+								</div>
+							</div>
+							<p class="little-article">Адреса</p>
+							<div class="card-address">
+								<p class="small-text-box" placeholder="Адрес" id="address">
+									ул. Нежинская, д. 7
+								</p>
+								<div class="plashka centering">
+									<img src="../img/metro.svg" alt="#" />
+									<p class="small-text-box" id="metro">Нахимовский проспект</p>
+								</div>
+							</div>
+						</div>
+						<div class="photo">
+							<img
+								src="../img/Rectangle 195.png"
+								alt="#"
+								style="position: relative; z-index: 0"
+								class="photo-img"
+							/>
+						</div>
+					</div>
+					<div>
+						<button id="save" onclick="save(this)">Сохранить</button>
+						<button id="alter" onclick="alter(this)">Изменить</button>
+						<button id="del" onclick="del(this)">Удалить</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="adds">
+			<button id="add-but" onclick="add_click()">+</button>
+		</div>
+		<script src="https://unpkg.com/imask"></script>
+		<script src="../js/organisations.js"></script>
+		<script src="../js/kek.js"></script>
+	</body>
+</html>
