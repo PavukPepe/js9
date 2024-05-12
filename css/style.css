@@ -1,11 +1,10 @@
 :root {
-	--aboba-color: #ffffff;.
-	--animation: ;
+	--aboba-color: #ffffff;
 }
 
 .card-body {
 	height: 360px;
-	width: 745px;
+	width: 745px !important;
 	max-height: 360px;
 	max-width: 745px;
 
@@ -14,6 +13,9 @@
 	.card {
 		padding: 30px;
 		display: grid;
+		max-height: 360px;
+		max-width: 745px;
+
 		grid-template-columns: 1fr 1fr;
 		.card-info {
 			font-family: 'Rubik';
@@ -94,7 +96,7 @@ body {
 
 .cards {
 	display: flex;
-	flex-direction: column;
+	/* flex-direction: column; */
 	align-items: center;
 	gap: 20px;
 }
